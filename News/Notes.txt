@@ -1,0 +1,20 @@
+New York Times Data Hierarchy:
+// ----------------------
+	article.story {
+
+		heading = .story-heading {
+			link = .a(href),
+			title = .a(text)		
+		}
+
+		byline = .byline {
+			authors = (text),
+			timestamp = .timestamp(data-utc-timestamp),
+			date = .timestamp(datetime /*YYYY-MM-DD*/)),
+			time = .timestamp(text)
+		}
+
+		summary = .summary(text)
+	}
+
+
